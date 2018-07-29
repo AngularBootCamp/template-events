@@ -4,13 +4,13 @@
     <div class="card-content">
       <span class="card-title">Time Clock</span>
       <p>Hello, {{ name }}</p>
-      <p>{{message}}</p>
+      <p><b>{{message}}</b></p>
       <p>
         Managers, don't forget to hold shift while clocking in!
       </p>
     </div>
     <div class="card-action">
-      <button class="btn" (click)="clockIn($event)">Clock In</button>
+      <button class="btn" (click)="clockIn($event)">Clock In</button> &nbsp;
       <button class="btn" (click)="clockOut()">Clock Out</button>
     </div>
   </section>
@@ -19,16 +19,15 @@
     <div class="card-content">
       <span class="card-title">Upcoming Schedule</span>
       <div class="time-block" (mouseleave)="clearSchedule()">
-        <div (mouseover)="showSchedule('M')" style="height: 80px">M</div>
-        <div (mouseover)="showSchedule('T')" style="height: 75px">T</div>
-        <div (mouseover)="showSchedule('W')" style="height: 60px">W</div>
-        <div (mouseover)="showSchedule('R')" style="height: 65px">R</div>
-        <div (mouseover)="showSchedule('F')" style="height: 80px">F</div>
+        <div class="day-0" (mouseover)="showSchedule('M')" style="height: 80px">M</div>
+        <div class="day-1" (mouseover)="showSchedule('T')" style="height: 75px">T</div>
+        <div class="day-2" (mouseover)="showSchedule('W')" style="height: 60px">W</div>
+        <div class="day-3" (mouseover)="showSchedule('R')" style="height: 65px">R</div>
+        <div class="day-4" (mouseover)="showSchedule('F')" style="height: 80px">F</div>
       </div>
-      Hover to see scheduled work times.
-    </div>
-    <div>
-      {{currentSchedule}}
+      <div>
+        {{currentSchedule}}
+      </div>
     </div>
   </section>
 

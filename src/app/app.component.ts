@@ -8,8 +8,8 @@ import { scheduleMap } from './app.constants';
 })
 export class AppComponent {
   name = 'John Doe';
-  message: string;
-  currentSchedule: string;
+  message = 'Please Clock In';
+  currentSchedule = 'Hover to see selected work times';
 
   clockIn(event: MouseEvent) {
     if (event.shiftKey) {
@@ -28,6 +28,6 @@ export class AppComponent {
   }
 
   clearSchedule() {
-    this.currentSchedule = '';
+    this.currentSchedule = 'Hover to see selected work times';
   }
 }
