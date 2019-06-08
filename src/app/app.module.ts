@@ -8,4 +8,4 @@ import { AppComponent } from './app.component';
   imports: [BrowserModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
