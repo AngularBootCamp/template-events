@@ -116,6 +116,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "template-events"
 }
